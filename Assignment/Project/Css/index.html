@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="bg">
+    <div class="form-container">
+        <div class="form-btn">
+            <span onclick="Login()">Login</span>
+            <span onclick="Signup()">Signup</span>
+            <hr id="Indicator"/>
+        </div>
+        <form action="" id="Loginform">
+            <!-- <h3>Login</h3> -->
+            <div class="container">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="container">
+                <input type="password" placeholder="Password">
+            </div>
+            <input type="submit" value="Log In">
+        </form>
+        <form action="" id="Signupform">
+            <!-- <h3>Signup</h3> -->
+            <div class="container">
+                <input type="text" placeholder="Fullname">
+            </div>
+            <div class="container">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="container">
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <div class="container">
+                <input type="password" name="re-enterpassword" placeholder="Re-enterpassword">
+            </div>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</div>
+    <script>
+        var MenuItems= document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
+        function menutoggle(){
+        if (MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight="0px";
+        }
+        }
+</script>
+<!-- JS for toggle Form -->
+<script>
+   var loginform = document.getElementById("Loginform");
+   var regform = document.getElementById("Signupform");
+   var Indicator = document.getElementById("Indicator");
+
+    function Signup()
+    {
+        regform.style.transform ="translateX(0px)";
+        loginform.style.transform ="translateX(0px)";
+        Indicator.style.transform ="translateX(150px)";
+    }
+
+    function Login()
+    {
+        regform.style.transform="translateX(410px)";
+        loginform.style.transform="translateX(410px)";
+        Indicator.style.transform="translateX(10px)";
+    }
+</script>
+</body>
+</html>

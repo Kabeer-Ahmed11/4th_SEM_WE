@@ -1,0 +1,115 @@
+body{
+    margin: 0%;
+}
+.bg{
+    background-image: url(789.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form-container {
+    margin-top: 200px ;
+    margin-left: 700px;
+    position: absolute;
+    padding: 20px 0;
+    overflow: hidden;
+    justify-content: center;
+    background-position: center;
+    background:url(456.jpg) no-repeat;
+    background-size: 450px 600px;
+    height: 550px; 
+    width: 450px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(61, 101, 209,3);
+    border-top: 2px solid rgba(61, 101, 209,3);
+    
+    /* overflow: hidden; */
+}
+.form-container span{
+    font-weight: bold;
+    font-size: 32px;
+    padding: 0 30px;
+    color: rgb(224, 224, 224);
+    cursor: pointer;
+    width: 80px;
+    display: inline-block;
+    letter-spacing: 4px;
+}
+.form-btn{
+     display: inline-block; 
+     margin-top: 20px;
+}
+
+.form-container form{
+    width: 450px;
+     padding: 0 20px;
+     position: absolute;
+     top: 130px;
+     transition: transform 2s;
+    
+}
+/* .form-container form h3{
+    margin: 0;
+    font-size: 30px;
+    padding: 20px 0;
+    color: #ccc;
+    letter-spacing: 3px;
+} */
+
+.form-container form input {
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 350px;
+    background: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 7);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 5) inset;
+    font-size:  17px;
+    padding: 0 10px;
+    margin: 10px 0;
+    letter-spacing:  1px;
+    border-radius: 10px;
+    opacity: .8;
+}
+.form-container form input[type="submit"]
+{
+    opacity: 1;
+    width: 350px;
+    cursor: pointer;
+    background: linear-gradient(90deg,rgb(21, 203, 235),rgb(43, 23, 221));
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.form-container form input[type="submit"]:hover
+{
+    background: linear-gradient(90deg,rgb(43, 23, 221),rgb(98, 14, 209));
+}
+
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#Loginform{
+    left: -430px;
+}
+#Signupform{
+    left: -20px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: rgba(28, 47, 211, 0.836)    ;
+    height: 3px;
+    margin-left: 20px;
+    margin-top: 8px;
+    transform: translateX(150px);
+    transition: transform 2s;
+}
